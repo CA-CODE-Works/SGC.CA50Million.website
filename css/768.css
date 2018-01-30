@@ -1,0 +1,29 @@
+/*
+768 and greater
+
+Move right column content to the right side
+*/
+
+.content_left_column {
+	width:645px;
+	float:left;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.content_one_column {
+	max-width:920px;
+	margin-left:20px;
+	margin-top:20px;
+}
+
+.content_right_column {
+	width:245px;
+	margin-right:20px;
+	margin-top:20px;
+	float:right; /* changed 'left' to 'right' to fix random 1px gap at right edge */
+
+}
+.home .content_right_column {
+	background:transparent;
+}

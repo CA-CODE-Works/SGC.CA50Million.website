@@ -1,0 +1,616 @@
+<!doctype html>
+
+<!-- 
+State of California 2014 master template
+Version 2014.xx.xx
+
+Based on Twitter Bootstrap
+-->
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>Sample - Icon Font Library</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!--#include virtual="/ssi/head-css-js.html" -->
+
+<style type="text/css">
+.tabledata_icon span{
+	font-size:3em;
+}
+table {
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid black;
+    padding:5px;
+}
+td {
+	vertical-align: middle;
+	padding: 10px;
+}
+</style>
+
+<script type="text/javascript">
+	var defaultActiveLink = "Examples";
+</script>
+
+
+</head>
+
+<!-- possible body classes are "primary" and "two-column" -->
+<body>
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    <div class="navigation-search">
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    </div>
+	<div class="header-decoration"></div>
+</header>
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+                        
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li class="active">Icon Fonts</li>
+            </ol>
+           
+         <h1>Icon Font Library</h1>
+		
+		<p>The CaGov icon font includes 124 icons you can use in your site. Four different formats of the font are included for compatibility with all popular browsers. You may need to add a mime map to your webserver for the WOFF font. To determine if your webserver needs it, upload the /fonts/CaGov.woff file to your webserver. Try downloading the WOFF in your browser by visiting: http://yourwebsite.ca.gov/fonts/CaGov.woff . If it prompts you to download the font, your server is configured correctly. If you get a 404 or other error, you'll need to add a mime map for extension ".woff", and the mimetype is "application/font-woff". Ask your server admin if you need assistance.</p>
+
+		<p>To insert an icon into your page, insert an empty span tag with the class name for the icon you wish to use, for example:</p>
+		<code>&lt;h2&gt;&lt;span class=&quot;ca-gov-icon-arrow-down&quot;&gt;&lt;/span&gt; Heading&lt;/h2&gt;</code>
+		<p>will appear as:</p>
+		<h2><span class="ca-gov-icon-arrow-down"></span> Heading</h2>
+        <p>When icons are used with H1 to H5 headings and some pre-configured modules, styles for font-size and color are included. When used anywhere else you'll need to add styles for the font-size and color yourself. Icon fonts can be styled using the same css rules used to style any other text on the page. For example <code>color:</code> and <code>font-size:</code> chnage the color and size of the icon.</p>
+		
+        <hr>
+		<h2>Icons Reference Sheet</h2>
+         
+            <table>
+                <tr>
+                    <th>icon</th>
+                    <th>class name</th>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-logo"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-logo</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-home"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-home</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-menu"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-menu</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-apps"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-apps</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-search"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-search</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-chat"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-chat</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-capitol"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-capitol</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-state"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-state</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-phone"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-phone</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-email"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-email</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-contact-us"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-contact-us</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-calendar"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-calendar</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-bear"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-bear</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-chat-bubble"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-chat-bubble</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-info-bubble"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-info-bubble</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-button"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-button</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-facebook"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-facebook</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-email"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-email</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-flickr"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-flickr</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-twitter"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-twitter</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-linkedin"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-linkedin</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-googleplus"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-googleplus</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-instagram"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-instagram</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-pinterest"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-pinterest</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-vimeo"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-vimeo</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share-youtube"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share-youtube</td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-law-enforcement"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-law-enforcement</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-justice-legal"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-justice-legal</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-at-sign"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-at-sign</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-attachment"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-attachment</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-zipped-file"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-zipped-file</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-powerpoint"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-powerpoint</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-excel"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-excel</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-word"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-word</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-pdf"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-pdf</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-share"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-share</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-facebook"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-facebook</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-linkedin"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-linkedin</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-youtube"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-youtube</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-twitter"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-twitter</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-pinterest"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-pinterest</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-vimeo"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-vimeo</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-instagram"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-instagram</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-flickr"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-flickr</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-google-plus"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-google-plus</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-microsoft"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-microsoft</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-apple"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-apple</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-android"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-android</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-computer"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-computer</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-tablet"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-tablet</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-smartphone"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-smartphone</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-roadways"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-roadways</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-travel-car"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-travel-car</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-travel-air"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-travel-air</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-truck-delivery"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-truck-delivery</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-construction"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-construction</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-bar-chart"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-bar-chart</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-pie-chart"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-pie-chart</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-graph"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-graph</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-server"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-server</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-download"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-download</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-cloud-download"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-cloud-download</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-cloud-upload"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-cloud-upload</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-shield"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-shield</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-fire"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-fire</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-binoculars"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-binoculars</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-compass"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-compass</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-sos"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-sos</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-shopping-cart"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-shopping-cart</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-video-camera"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-video-camera</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-camera"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-camera</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-green"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-green</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-loud-speaker"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-loud-speaker</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-audio"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-audio</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-print"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-print</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-medical"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-medical</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-zoom-out"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-zoom-out</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-zoom-in"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-zoom-in</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-important"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-important</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-chat-bubbles"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-chat-bubbles</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-phone"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-phone</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-people"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-people</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-person"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-person</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-user-id"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-user-id</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-payment-card"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-payment-card</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-skip-backwards"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-skip-backwards</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-play"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-play</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-pause"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-pause</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-skip-forward"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-skip-forward</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-mail"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-mail</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-image"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-image</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-house"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-house</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-gear"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-gear</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-tool"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-tool</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-time"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-time</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-cal"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-cal</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-check-list"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-check-list</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-document"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-document</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-clipboard"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-clipboard</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-page"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-page</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-read-book"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-read-book</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-cc-copyright"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-cc-copyright</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-ca-capitol"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-ca-capitol</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-ca-state"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-ca-state</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-favorite"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-favorite</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-rss"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-rss</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-road-pin"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-road-pin</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-online-services"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-online-services</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-link"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-link</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-magnify-glass"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-magnify-glass</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-key"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-key</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-lock"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-lock</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-info"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-info</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-up"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-up</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-down"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-down</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-left"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-left</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-right"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-right</td>
+                </tr>
+                <!-- Added by symsoft -->
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-carousel-prev"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-carousel-prev</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-carousel-next"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-carousel-next</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-prev"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-prev</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-arrow-next"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-arrow-next</td>
+                </tr>
+                
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-menu-toggle-closed"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-menu-toggle-closed</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-menu-toggle-open"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-menu-toggle-open</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-carousel-play"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-carousel-play</td>
+                </tr>
+                <tr>
+                    <td class="tabledata_icon"><span class="ca-gov-icon-carousel-pause"></span></td>
+                    <td class="tabledata_name">ca-gov-icon-carousel-pause</td>
+                </tr>
+            </table>
+        
+        </main>
+    </div>
+</div>
+
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+
+<!-- 
+State of California 2014 master template
+Version 2013.xx.xx
+
+Based on Twitter Bootstrap
+-->
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>Sample - Carousels</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!--#include virtual="/ssi/head-css-js.html" -->
+
+<script type="text/javascript">
+	var defaultActiveLink = "Examples";
+</script>
+
+
+</head>
+
+<!-- possibly body classes are primary and two-column -->
+<body class="two-column">
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    
+    <div class="navigation-search">
+        
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    
+    </div>
+    
+	<div class="header-decoration"></div>
+</header>
+
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li class="active">Carousels</li>
+            </ol>
+            
+            <h1>Carousels and Slideshows</h1>
+            
+            <h2>Media Carousel</h2>
+            <p>The Media Carousel is often placed within a panel going inside <code>&lt;div class="panel-body"&gt;</code>. It can also simply be placed by itself. It will scroll a set of items contained in a container with class<code>.carousel-media</code></p>
+            
+            <h3>Media Carousel in Panel</h3>
+             <div class="panel panel-overstated">
+                <div class="panel-heading">
+                    <h4>Latest Media</h4>
+                    <div class="options">
+                        <a href="" class="btn btn-default">More Items</a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <!--#include virtual="/sample/modules/carousel-media.html" -->
+                </div>
+            </div>
+            
+            <h3>Media Carousel without Panel</h3>
+            <!--#include virtual="/sample/modules/carousel-media.html" -->
+            
+           <h2><label for="sample-carousel-1">Source Code:</label></h2>
+            <textarea id="sample-carousel-1" class="form-control" rows="10" cols="80"><!--#include virtual="/sample/modules/carousel-media.html" --></textarea>
+            
+            <hr>
+            
+            <h1>Link Carousel</h1>
+            <p>The Link Carousel scrolls through a set of image links. It will scroll a set of items contained in a container with class<code>.carousel-link</code>.</p>
+            <h2>Link Icon Carousel Example</h2> 
+            <!--#include virtual="/sample/modules/carousel-link.html" -->
+            
+            <h2><label for="sample-carousel-2">Source Code:</label></h2>
+            <textarea id="sample-carousel-2" class="form-control" rows="10" cols="80"><!--#include virtual="/sample/modules/carousel-link.html" --></textarea>
+            
+        </main>
+        
+        <div class="main-secondary">
+        	<h1>Social Media Slider</h1>
+            <p>The Social Media Slider displays one item at a time. It will slide a set of items contained in a container with class<code>.carousel-slider</code>.</p>
+            <h2>Social Media Slider Example</h2>
+            <!--#include virtual="/sample/modules/carousel-slider.html" -->
+            
+            <h2><label for="sample-carousel-3">Source Code:</label></h2>
+            <textarea id="sample-carousel-3" class="form-control" rows="10" cols="80"><!--#include virtual="/sample/modules/carousel-slider.html" --></textarea>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<!doctype html>
+
+<!-- 
+State of California 2014 master template
+Version 2013.xx.xx
+
+Based on Twitter Bootstrap
+-->
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"><!-- InstanceBegin template="/Templates/1-column.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Contact Us - California @50 Million</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="MetaTags" -->
+<meta name="Author" content="Strategic Growth Council, State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="contact, us, California, government" />
+<!-- InstanceEndEditable -->
+<!--#include virtual="/ssi/head-css-js.html" -->
+<script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<!-- possible body classes are "primary" and "two-column" -->
+<body class="">
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    
+    <div class="navigation-search">
+        
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    
+    </div>
+    <div class="header-decoration"></div>
+</header>
+
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+        <ol class="breadcrumb dynamic"></ol>
+        <!-- InstanceBeginEditable name="MainContent" -->
+            <article>
+                <h1>Contact Us</h1>
+              <p>Phone: (xxx)xxx-xxx</p>
+                
+                <h2>Email Form:</h2>
+                
+                <form method="post" dir="ltr" id="frmMail">
+        <fieldset>
+            <label>
+                Email Address: <input name="Email" id="Email" tabindex="1" type="email" dir="ltr" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+                Message:<br />
+                <textarea name="Comment" id="Comment" cols="75" tabindex="2" dir="ltr"></textarea>
+            </label>
+        </fieldset>
+        <br />
+
+        <button type="submit" tabindex="3">Send</button>
+        <button type="button" tabindex="4">Cancel</button>
+        <div class="g-recaptcha" data-sitekey="6LezHyETAAAAAJ72sSu5My_2Dc3ctj3WFRzGN8LI"></div>
+    </form>
+
+    <script type="text/javascript">
+
+        // Handle the form submit event here
+        $("#frmMail").submit(function (e) {
+
+            // e.preventDefault();
+
+            var fromEmail = $("#Email").val();
+            var comment = $("#Comment").val();
+            var rcapDiv = $("#g-recaptcha-response");
+            var rcap = rcapDiv.val();
+            
+
+            var data = {
+                fromEmail: fromEmail,
+                comment: comment,
+                gRecaptchaResponse: rcap
+            };
+				
+            // Posting using verbose style jQuery
+            $.ajax({
+                type: "POST",
+                url: "SendMail.ashx",
+                data: data,
+				//The Error is always being called even when the email is sent. I believe there is an error in the json being returned.
+				/* 
+				error: function(){onError();},
+                success: function(){onSuccess();},
+				*/
+                dataType: "json"
+            });
+        });
+
+        function onSuccess() {
+			alert("Pass");
+        }
+		
+        function onError() {
+			alert("Fail");
+
+        }
+    </script>
+            </article>
+
+        <!-- InstanceEndEditable -->
+        </main>
+    </div>
+</div>
+
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,144 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>About CA State Template v4</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!--#include virtual="/ssi/head-css-js.html" -->
+
+<script type="text/javascript">
+	var defaultActiveLink = "About";
+</script>
+
+</head>
+
+<body>
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    <div class="navigation-search">
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    </div>
+	<div class="header-decoration"></div>
+</header>
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li class="active">About</li>
+            </ol>
+          
+ 
+
+
+<h1>State Template v4</h1>
+          <p>The California State Template is an HTML template and sample website offered by the California Office of Technology Services (OTECH) to various other agencies and departments within the State of California. The template allows OTECH to provide California Government entities with guidelines for how their websites should be created and developed, and allows OTECH to maintain consistent branding for State websites. The State Template is offered to other State entities through a website called <a href="http://webtools.ca.gov">WebTools</a>.</p>
+                     <p>As technologies evolve (for example, responsive design), OTECH performs a redesign of the State Template and offers it to State agencies and departments through WebTools. Previous versions of the State Template include the 2013 responsive design template, the 2010 fixed design template, and the 2007 fluid design template.<br>
+                       <br>
+          As part of the v.4 redesign of the California State Template,  OTECH is now creating a new "semantic" version of the State Template. This template uses semantically named HTML 5 tags and CSS classes to provide greater flexibility when updating the State Template in the future. The overall goal is to be able to change the look-and-feel of the State template in the future through LESS and CSS, without having to drastically change the HTML markup. This would allow State entities to update their websites with greater ease when a new version of the State Template is released, and also provides them more incentive to do so. 
+   
+          
+<div class="two-thirds">                    
+                     <h3>State Template v4 provides major improvements and benefits:</h3>
+                     <ul>
+                       <li>Re-architected to utilize industry standard frameworks:
+                         <ul class="list-overstated accordion-list">
+                           <li><a class="toggle" title="Bootstrap">Bootstrap</a> – for mobile first development
+                           <div class="description"><p>Bootstrap is a commonly used front-end framework created by Twitter for creating websites. It basically provides scaffolding for page layouts and various templates for forms, buttons, navigation, and other commonly used website elements. Bootstrap also provides JavaScript for certain interactive functionality (such as dynamic navigation, hover effects, etc.). It also provides features for developing responsive websites.</p>
+<p>The 2014 State Template is built on top of Bootstrap to create the basic layout and look-and-feel of the State Template. Using this framework provides the scaffolding and templates that can be reused throughout the website, without having to define explicit markup and CSS for such commonly used elements. Bootstrap also utilizes LESS, allowing for the 2014 State Template to use semantically named classes that are based on Bootstrap classes. </p>
+<p>Learn more about <a href="http://getbootstrap.com">Bootstrap</a></p>
+</div></li>
+                           <li><a class="toggle" title="Less CSS">{Less}</a> – extends the CSS language
+                           <div class="description"><p>LESS is a dynamic stylesheet language that gets compiled to CSS that can be consumed by browsers. Using LESS over traditional CSS provides greater flexibility as LESS provides the ability to use variables, nesting, mixins, operators, and functions. </p>
+<p>For the 2014 State Template, LESS (combined with semantically named classes) is used to allow OTECH flexibility in enhancing the State Template, and also for changing the look-and-feel of future templates with greater ease over traditional CSS. </p>
+<p>Learn more about <a href="http://lesscss.org/">{Less}</a></p>
+</div></li>
+                           <li><a class="toggle" title="Grunt">GRUNT</a> – javascript task runner
+                            <div class="description"><p>Grunt is a JavaScript task runner that executes on top of the Node.js runtime environment. For the 2014 State Template, Grunt is used for performing the following tasks: Compiling LESS files into CSS files, Combining multiple CSS or JS files into a single CSS or JS file (to reduce the number of requests made by a browser), Minification of CSS and JS files (to reduce the size of files and thus bandwidth usage).</p>
+<p>Learn more about <a href="http://gruntjs.com/">GRUNT</a></p>
+</div></li>
+                           <li><a class="toggle" title="Node js" href="" data-mce-href="http://nodejs.org/">Node js </a>– cross-platform runtime environment
+                           <div class="description"><p>Node.js is an open source, cross-platform runtime environment that executes JavaScript code on the server-side (vs. client-side in a browser). For purposes of the development of the 2014 State Template, Node.js is used by applications such as Grunt, described in the next section.</p>
+<p>Learn more about <a href="http://nodejs.org/">Node js</a></p>
+</div></li>
+                           <li><a title="HTML5" href="http://www.w3schools.com/html/html5_intro.asp" data-mce-href="http://www.w3schools.com/html/html5_intro.asp">HTML5</a> – markup and semantic elements </li>
+                         </ul>
+                       </li>
+                     </ul>
+                     <ul>
+                       <li>Fully mobile and responsive design now with layout breakpoints</li>
+                     </ul>
+                     <ul>
+                       <li>Re-architected to support semantic microdata referencing <a title="Schema.org" href="http://schema.org/" data-mce-href="http://schema.org/">schema.org</a>
+                         <ul>
+                           <li>Enabling greater integrated answers from intelligent services:<br>
+                             Siri, Google Now, Cortana, etc.</li>
+                           <li>Enabling enhanced search results from the major search vendors</li>
+                         </ul>
+                       </li>
+                     </ul>
+                     <ul>
+                       <li>Because of standardized architecture and semantic markup, future migrations are significantly simplified!</li>
+                     </ul>
+                     <ul>
+                       <li>Improved Accessibility due to utilizing industry frameworks and accessibility plugins including content semantics</li>
+                     </ul>
+                     </p>
+                     
+</div>
+ 
+<div class="group">   
+	<div class="third gutter"> <p><br><br></p>
+		<div class="panel panel-understated">
+    		<div class="panel-heading">
+        		<h4><span class="ca-gov-icon-info"></span> For Your Information</h4>
+        		
+    		</div>
+
+<div class="panel-body">
+<p>The State Template v4 features a complete restructuring of the HTML markup, CSS, and JavaScript in addition to new content templates incorporating semantic naming conventions  while preserving the familiar look-and-feel of the 2013 Responsive Template.</p>       
+<p>Additionally, technologies such as LESS were introduced and new content modules also added for State agencies and departments to utilize when developing their websites.</p>
+<p>If you are interested in obtaining the uncompiled or source version of the State Template for testing and adding new functionality please contact us <a href="http://webtools.ca.gov/about-web-tools/contact-us/">Here</a>. </p>
+	</div>
+</div>
+       <p><a class="btn btn-default center-block" href="http://webtools.blogs.ca.gov/files/2015/04/CA_State_Template_v4.zip" target="_self">Download State Template v4</a></p>
+	</div>
+</div>
+          
+<p><br><span class="label label-info">NOTE:</span> The State Template Package available on <a href="http://webtools.ca.gov/">WebTools</a> has been compressed and optimized for better performance. This means that you will not see CSS files that are formatted in a standard and editable way as in the previous versions of the State Template. Detailed instructions about using the template and incorporating your own CSS are included in the State Template downloadable package and the <a href="/sample/instructions.html">Instructions Page</a>.</p>         
+ 
+      </main>
+    </div>
+</div>
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+</body>
+</html>

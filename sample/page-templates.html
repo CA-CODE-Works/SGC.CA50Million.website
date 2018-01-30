@@ -1,0 +1,110 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>Sample - Page Templates</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!--#include virtual="/ssi/head-css-js.html" -->
+
+<script type="text/javascript">
+	var defaultActiveLink = "Examples";
+</script>
+
+</head>
+
+<body>
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    
+    <div class="navigation-search">
+        
+        <div id="head-search" class="search-container">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    
+    </div>
+    
+	<div class="header-decoration"></div>
+</header>
+
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li class="active">Page Templates</li>
+            </ol>
+            
+            <h1>Page Templates</h1>
+            <p>There are four (4) master template page layouts to choose from. A pages layout can be controlled by applying two (2) classes to the <code>&lt;body&gt;</code> element. By default pages will have the smaller banner area and single column. Adding a class of <code>.primary</code> will designate a page a landing page and use the taller header image. Adding a class of <code>.two-column</code> will add a sidebar on the right side of the page. You are free to mix and match <code>.primary</code> and <code>.two-column</code> classes to achieve the layout desired. </p>
+            
+            <h2>Demonstration</h2>
+            <p>Toggle the buttons to add or remove the appropriate <code>&lt;body&gt;</code> classes.</p>
+            <button class="togglePrimary">Add .primary</button> <button class="toggleTwoCol">Add .two-column</button>
+            
+        </main>
+    </div>
+</div>
+
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+<script>
+// -- DEMONSTRATION ONLY! -- //
+$(document).ready(function(){        
+    // Toggle .primary class
+    $(".togglePrimary").click(function() {
+        var btnLabel = $(this);
+        // Toggle body class and button text when clicked
+        if ($(this).html() == 'Add .primary') {
+            btnLabel.html('Remove .primary');
+            $("body").addClass("primary");
+        } else {
+            btnLabel.html('Add .primary');
+            $("body").removeClass("primary");
+        }
+    });
+    
+    // Toggle .two-column class
+    $(".toggleTwoCol").click(function() {
+        var btnLabel = $(this);
+        // Toggle body class and button text when clicked
+        if ($(this).html() == 'Add .two-column') {
+            btnLabel.html('Remove .two-column');
+            $("body").addClass("two-column");
+        } else {
+            btnLabel.html('Add .two-column');
+            $("body").removeClass("two-column");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

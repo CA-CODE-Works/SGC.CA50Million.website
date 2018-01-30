@@ -1,0 +1,112 @@
+
+header {
+	min-height: 235px;
+}
+
+.header_title {
+	text-transform:uppercase;
+	display: block;
+	position:relative;
+	padding:0 0 0 25px;
+	color: #fff;
+	font-size: 1.5em;
+	font-weight: 500;
+	white-space:nowrap; /* fix IE8 comp mode issue where nav text wraps */
+	text-align:left;
+	letter-spacing:1px;
+}
+
+.header_title.sub_title {
+	font-size: 1.85em;
+	font-weight: 100;
+	margin-top:-5px;
+}
+
+
+
+#background_decorative {
+	display:block;
+	position:absolute;
+	top: 182px;
+	padding:12px 0;
+	font-size: 1.21em;
+	
+	width:100%;
+	z-index:-1;
+}
+
+#head_search {
+	top: 187px;
+}
+
+#navigation {
+	position:absolute;
+	top: 182px;
+	width:100%;
+	height:auto;
+	overflow:visible;
+}
+
+.head_organization_banner {
+	width:  750px;
+	margin:0 auto;
+	top: 65px; /* adjust this, depending on size of your banner */
+	display:block;
+	height:auto;
+	line-height:normal;
+	text-align:center;
+	float:left;
+	padding-left:115px;
+}
+
+.head_cagov_logo { /* 94 x 74 */
+	display:block;
+	position:absolute;
+	top: 60px;
+	left:20px;
+	z-index:10;
+	width:700px;
+}
+
+.heading7 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight:700;
+	color:#fff;
+	font-size:1.3em;
+	display:block;
+	text-transform:uppercase;
+	text-align:center;
+	background-color:#5271cc;
+	border-bottom: #3e5599 8px solid;
+	padding-bottom:5px;
+}
+
+.focus_prev_next {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	color:#fff;
+	font-size:.8em;
+	position:absolute;
+	top:50px;
+	right:15px;
+	cursor:pointer;
+}
+.focus_prev_next span {
+	margin-left:.5em;
+}
+.focus_inactive {
+	color:rgba(255,255,255,0.5);
+	cursor:auto;
+}
+.focus_content {
+	left: auto;
+	margin-left:100px;
+}
+
+.state_campaigns {
+	width: 920px;
+	height: auto;
+	margin: 15px 0 0 20px;
+	font-size: 1em;
+	line-height: 1em;
+}

@@ -1,0 +1,1957 @@
+/*
+State of California 2012 master template
+Version 2013.xx.xx
+*/
+
+/* 
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling. 
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ * 
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; }
+.ie7 audio, .ie7 canvas, .ie7 video { display: inline; min-width: 1px; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 2. Force vertical scrollbar in non-IE
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url(/font/PTNarrow.ttf) format("truetype");
+}
+	
+@font-face {
+	font-family: "PT Sans Narrow Bold";
+    src: url(/font/PTNarrowBold.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "PT Serif";
+    src: url(/font/PTSerif.ttf) format("truetype");
+}
+
+
+@font-face {
+	font-family: "PT Sans";
+    src: url(/font/PTSans.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "PT Sans Bold";
+    src: url(/font/PTSansBold.ttf) format("truetype");
+}
+
+
+html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+
+body { margin: 0; font-size: 18px; line-height: 1.5em; font-family: 'PT Serif', serif;  }
+
+button, input, select, textarea { font-family: 'PT Sans Narrow', sans-serif; color: #222; }
+
+.side_column {font-family: 'PT Sans Narrow', sans-serif; font-size:14px; }
+
+/* 
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate
+ * Also: hot pink! (or customize the background color to match your design)
+ */
+
+/* x::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+x::selection { background: #fe57a1; color: #fff; text-shadow: none; } */
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+a { color: #1f70a7; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong {  }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic;  }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; font-size:.85em; line-height:1.6em; font-family: 'PT Sans Narrow', sans-serif; }
+
+.two_column_list {
+	float:left;
+	margin: 0 0 0 -40px;
+	padding-right:150px;
+}
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e 
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle;}
+
+/*
+ * Correct overflow not hidden in IE9 
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/* 
+ * 1. Correct color not inheriting in IE6/7/8/9 
+ * 2. Correct alignment displayed oddly in IE6/7 
+ */
+
+legend { border: 0; padding: 0; }
+.ie7 legend { margin-left: -7px; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; }
+.ie7 button, .ie7 input, .ie7 select, .ie7 textarea { vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; }
+.ie7 button, .ie7 input { overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+.ie7 table button, .ie7 table input { overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 
+ * Remove inner padding and border in FF3/4: h5bp.com/l 
+ */
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 
+ * 1. Remove default vertical scrollbar in IE6/7/8/9 
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+/* input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; } */
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.ie7 .clearfix { min-width: 1px; }
+.ie8 .clearfix:before, .ie8 .clearfix:after { display:inline; } /* fix for extra space in IE8 */
+
+/* ==|== primary styles =====================================================
+   Author: 
+   ========================================================================== */
+
+
+header, #main_content, footer {
+	min-width:320px;
+}
+
+header {
+	background-size: cover;
+	background-color: #fff;
+	position:relative;
+	z-index:10;
+}
+.home header {
+	min-height:0;
+	background-position:40% 40%;
+}
+header a, header a:link,  header a:visited, header a:hover, .submit_container input {
+	color: #fff; /* needed when images are turned off */
+}
+
+.logo_and_banner {
+	margin:0 118px 0 59px; /* make room for buttons on left and right */
+}
+.head_cagov_logo { /* 94 x 74 */
+	display:none;
+}
+.head_organization_banner { /* 269 x 39 */
+	position:relative;
+	/* margin:0 auto;
+	top:0px;
+	width:100%; */
+	height:69px;
+	line-height:69px; /* vertically centers the image */
+	text-align:center;
+}
+.head_organization_banner img {
+	max-width:100%;
+	max-height:100%;
+}
+.phone_hdr {
+	height:69px;
+	margin-bottom:2px;
+}
+
+/* Search */
+
+#head_search {
+	position:relative;
+	padding:5px 0% 5px 2%;
+	display:none;
+}
+.home #head_search {
+	padding:12px 0% 12px 4%;
+}
+#head_search.phone_show_search {
+	display:block;
+}
+
+.textfield_container {
+
+}
+.home .textfield_container {
+	margin-right:120px;
+}
+#search_local_textfield {
+	width:100%;
+	padding: 2px;
+	background:#FFD5D5 url(../images/energy/search_background.png) repeat;
+	-moz-border-radius: 4px;
+	/* border-radius: 4px; */
+	border: #8e2424 solid 1px;
+	font-size: 1.1em;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);  
+	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 1);  
+	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 1);
+}
+.home #search_local_textfield {
+	padding:16px;
+	border:2px solid transparent;
+}
+.submit_container {
+	position:absolute;
+	top:-2px;
+	left:-75px;
+	width:70px;
+	height:33px;
+	background-color:#b34848;
+	border:none;
+	text-decoration:none;
+	text-transform:uppercase;
+	color: #fff;
+	font-size: 1.0em;
+	font-weight: 500;
+	letter-spacing:1px;
+	outline:none;
+}
+
+a.submit_container {
+	position:absolute;
+	top:3px;
+	left:-55px;
+	width:70px;
+	height:33px;
+	background-color:#b34848;
+	border:none;
+	text-decoration:none;
+	text-transform:uppercase;
+	color: #fff;
+	font-size: 1.0em;
+	font-weight: 500;
+	letter-spacing:1px;
+	outline:none;
+}
+
+.back_top {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight:500;
+	font-size:.7em;
+	cursor:pointer; 
+	padding-top:10px; 
+	margin: 0 auto; 
+	position: relative; 
+	float:right;
+	width:100px; 
+	height:18px; 
+	text-align: center;
+	text-decoration:none;
+	text-emphasis:none;
+}
+
+
+.ie7 .submit_container, .ie8 .submit_container {
+	
+}
+.submit_container:hover {
+
+}
+.ie7 .submit_container:hover, .ie8 .submit_container:hover {
+	
+}
+.ie7 .home .submit_container, .ie8 .home .submit_container {
+	
+}
+.ie7 .home .submit_container:hover, .ie8 .home .submit_container:hover {
+
+}
+.home .submit_container {
+
+}
+.submit_container input {
+	width:70px;
+	height:45px;
+}
+.home .submit_container input {
+	width:60px;
+	height:60px;
+}
+
+/* Navigation */
+
+#navigation {
+	width:100%;
+	z-index:20;
+	height:0px;
+	overflow:hidden;
+	position:relative;
+}
+.ie7 #navigation {
+	height:auto;
+	overflow:visible;
+}
+#navigation ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	padding-left:17px;
+}
+#navigation li {
+	padding:0;
+	margin-bottom:2px;
+}
+
+#navigation li li {
+	width:auto;
+	margin-bottom:0;
+}
+
+#navigation a.nav_level1_link {
+	text-decoration:none;
+	text-transform:uppercase;
+	display: block;
+	position:relative;
+	padding:13px 10px 13px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	white-space:nowrap; /* fix IE8 comp mode issue where nav text wraps */
+	text-align:center;
+	letter-spacing:1px;
+}
+
+.highlighted_nav_item a.nav_level1_link {
+	text-shadow: 0 0 0.2em #ce770e, 0 0 0.2em #ce770e;
+	
+}
+.highlighted_nav_item a.nav_level1_link #nav_home_container {
+	background-position:0 -40px;
+}
+#navigation #nav_list.unhighlight_nav_item a.nav_level1_link {
+	text-shadow:none;
+}
+header #navigation #nav_list li:hover a.nav_level1_link {
+	text-shadow: 0 0 0.2em #ce770e, 0 0 0.2em #ce770e;
+	background-color:#8e2424;
+}
+header #navigation #nav_list li:hover a.nav_level1_link #nav_home_container {
+	background-position:0 -40px;
+}
+
+#nav_home_container {
+	position:absolute;
+	top:2px;
+	left:50%;
+	margin-left:-20px;
+	height:40px;
+	width:40px;
+	background: transparent url(../images/template2013/nav_home.png) no-repeat 0 0;
+}
+#nav_home_container + img {
+	width:40px;
+	height:1px;
+}
+.nav_panel {
+	display:none;
+}
+
+#nav_list {
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+.ie7 #nav_list {
+	position:static;
+}
+
+.phone_hd_left {
+	position:relative;
+	float:left;
+	z-index:10;
+}
+
+.phone_hd_right {
+	top:0;
+	right:0;
+	position:absolute;
+	z-index:10;
+	width:118px; /* 6+47+6+6+47+6 = 118 */
+}
+.phone_hd_left a, .phone_hd_right a {
+	float:left;
+	cursor:pointer;
+}
+.p_h_button {
+	display:block;
+	width:47px;
+	height:41px;
+	margin:12px 6px 12px 6px;
+}
+.p_h_menu {
+	background:transparent url(../images/template2013/phone_nav.png) no-repeat 0 0;
+}
+.p_h_mobile_gallery {
+	background:transparent url(../images/template2013/phone_nav.png) no-repeat -50px 0;
+}
+.p_h_contact {
+	background:transparent url(../images/template2013/phone_nav.png) no-repeat -100px 0;
+}
+.p_h_search {
+	background:transparent url(../images/template2013/phone_nav.png) no-repeat -150px 0;
+}
+
+.hide_from_phones {
+	display:none;
+}
+
+/* content structure */
+
+#main_content {
+	background:#fff;
+}
+.ie7 #main_content {
+	background:#fff;
+}
+
+.content_left_column {
+	min-height:100px;
+	margin:0;
+	padding:1px 0 20px 0;
+}
+.content_right_column {
+	min-height:100px;
+}
+
+/* Footer */
+
+footer {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	color: #D5D5D5;
+	text-align:center;
+	padding-top:14px;
+	line-height:2.5;
+	font-size:14px;
+}
+
+footer a, footer a:hover, footer a:visited {
+	color: #fff;
+	text-decoration:underline;
+}
+footer div {
+	padding-bottom:0.8em;
+}
+footer a {
+	padding:0 4px 0 4px;
+	white-space: nowrap;
+	text-decoration:underline;
+}
+
+#background_decorative {
+	display:none;
+}
+
+#skip_to_content a, #skip_to_content a:hover, #skip_to_content a:visited {
+	position:absolute;
+	left:0px;
+	top:-500px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+#skip_to_content a:active, #skip_to_content a:focus {
+	top:0px;
+	width:auto;
+	height:auto;
+	color:#00f;
+	background:#fff;
+	padding:1px 2px;
+}
+
+/* ***** Content ***** */
+
+.add_padding {
+	padding:16px 4%;
+}
+.ie7 .add_padding {
+	padding:26px 4%;
+}
+.add_maincontent_padding {
+
+}
+.add_side_padding_single {
+	padding-left:15%;
+}
+
+.add_side_padding {
+	padding-left:4%;
+}
+
+.add_right_margin {
+	margin-right:25px;
+}
+
+.add_top_padding {
+	padding-top:4%;
+}
+
+.add_bottom_padding {
+	padding-bottom:4%;
+}
+
+.add_side_padding_compare {
+	padding-left:40px;
+}
+
+.add_side_padding_b {
+	padding:0 3%;
+}
+
+.add_side_padding_glance {
+	padding:0 13%;
+}
+
+.add_topbottom_padding {
+	padding:16px 0;
+}
+
+h1 {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	
+	color:#000;
+	font-size:1.8em;
+	margin:18px 0 9px 0;
+	text-transform:uppercase;
+}
+h2 {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	
+	color:#595959;
+	font-size:1.33em;
+	margin:18px 0 9px 0;
+	text-transform:uppercase;
+}
+h3 {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	
+	color:#222222;
+	font-size:1em;
+	margin:0 0 9px 0;
+	text-transform:uppercase;
+}
+h4 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+	color:#fff;
+	font-size:1.33em;
+	margin:0;
+	text-transform:uppercase;
+	text-align:left;
+	background-color:#5271cc;
+	border-bottom: #3e5599 3px solid;
+	padding:3px 0 3px 25px;
+	letter-spacing:1px;
+}
+h5 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+	color:#fff;
+	font-size:.75em;
+	margin:0 auto;
+	text-transform:uppercase;
+	text-align:center;
+	background-color:#5271cc;
+	border-bottom: #3e5599 3px solid;
+	letter-spacing:1px;
+	height: 29px;
+	padding-top: 3px;
+}
+h6 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+	color:#fff;
+	font-size:.75em;
+	margin:0 auto;
+	text-transform:uppercase;
+	padding-left:27px;
+	text-align:left;
+	background-color:#8fbf60;
+	border-bottom: #61844e 3px solid;
+	letter-spacing:1px;
+	height: 29px;
+	padding-top: 3px;
+}
+h6.side {
+	text-align:center;
+	padding-left:0px
+}
+h7 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	
+	color:#fff;
+	font-size:1.3em;
+	display:block;
+	text-transform:uppercase;
+	text-align:center;
+	background-color:#5271cc;
+	border-bottom: #3e5599 8px solid;
+	padding-bottom:5px;
+}
+
+.h7_content {
+	margin:0;
+	text-align:center;
+}
+
+.h7_content_goal {
+	padding-left:25px;
+	position:absolute;
+}
+
+p {
+	margin:0 0 9px 0;
+}
+
+.add_icon_blue_arrow_down {
+	background:transparent url(../images/template2013/icon_blue_arrow_down.png) no-repeat top left;
+	padding-left:40px;
+}
+.add_icon_blue_arrow_right {
+	background:transparent url(../images/template2013/icon_blue_arrow_right.png) no-repeat top left;
+	padding-left:40px;
+}
+.add_icon_blue_star {
+	background:transparent url(../images/template2013/icon_blue_star.png) no-repeat top left;
+	padding-left:40px;
+}
+
+.add_icon_brown_road, .add_icon_brown_arrow_right, .add_icon_brown_arrow_up, .add_icon_brown_i, .add_icon_brown_links, .add_icon_brown_rss,
+.add_icon_black_asterisk,
+.add_icon_orange_arrow_right, .add_icon_orange_rss, .add_icon_orange_star, .add_icon_orange_i, .add_icon_orange_links, .add_icon_orange_onlineforms,
+.add_icon_orange_onlineservices, .add_icon_orange_road {
+	background-repeat:no-repeat;
+	background-position:20px 50%;
+	padding-left:50px;
+	padding-right:50px;
+	min-height:30px;
+}
+
+.add_icon_brown_road {
+	background-image:url(../images/template2013/icon_brown_road.png);
+}
+.add_icon_brown_arrow_right {
+	background-image:url(../images/template2013/icon_brown_arrow_right.png);
+}
+.add_icon_brown_arrow_up {
+	background-image:url(../images/template2013/icon_brown_arrow_up.png);
+}
+.add_icon_brown_i {
+	background-image:url(../images/template2013/icon_brown_i.png);
+}
+.add_icon_brown_links {
+	background-image:url(../images/template2013/icon_brown_links.png);
+}
+.add_icon_brown_rss {
+	background-image:url(../images/template2013/icon_brown_rss.png);
+}
+
+.add_icon_black_asterisk {
+	background-image:url(../images/template2013/icon_black_asterisk.png);
+}
+
+.add_icon_orange_arrow_right {
+	background-image:url(../images/template2013/icon_orange_arrow_right.png);
+}
+.add_icon_orange_rss {
+	background-image:url(../images/template2013/icon_orange_rss.png);
+}
+.add_icon_orange_star {
+	background-image:url(../images/template2013/icon_orange_star.png);
+}
+.add_icon_orange_i {
+	background-image:url(../images/template2013/icon_orange_i.png);
+}
+.add_icon_orange_links {
+	background-image:url(../images/template2013/icon_orange_links.png);
+}
+.add_icon_orange_onlineforms {
+	background-image:url(../images/template2013/icon_orange_onlineforms.png);
+}
+.add_icon_orange_onlineservices {
+	background-image:url(../images/template2013/icon_orange_onlineservices.png);
+}
+.add_icon_orange_road {
+	background-image:url(../images/template2013/icon_orange_road.png);
+}
+
+
+.container_style_a {
+	overflow:hidden;
+	margin-bottom:1em;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.container_style_a h4 {
+	color:white;
+	
+	margin:0 0 .8em 0;
+	padding:4px 12px;
+}
+
+.container_style_b {
+	overflow:hidden;
+	padding-top:5px;
+}
+
+.container_two_column {
+	float:left;
+}
+
+.container_style_b h4 {
+
+	margin:0 0 .8em 0;
+	padding:4px 12px;
+}
+
+.container_style_c {
+	overflow:hidden;
+}
+.container_style_c h4 {
+	color:#473f2c;
+	
+	margin:0 0 .8em 0;
+	padding:4px 12px;
+}
+
+.container_style_d h5 {
+	position:relative;
+	-moz-box-shadow:    0px 3px 3px #aaa;
+	-webkit-box-shadow: 0px 3px 3px #aaa;
+	box-shadow:         0px 3px 3px #aaa;
+	margin:0 0 .8em 0;
+}
+.style_d_triangle {
+	width:32px;
+	height:21px;
+	position:absolute;
+	bottom:-21px;
+	left:50%;
+	margin-left:-16px;
+}
+
+.container_style_e h5 {
+	color:#333333;
+	-moz-box-shadow:    0px 3px 3px #aaa;
+	-webkit-box-shadow: 0px 3px 3px #aaa;
+	box-shadow:         0px 3px 3px #aaa;
+	margin:0 0 .8em 0;
+}
+
+div.container_style_a .add_padding, div.container_style_b .add_padding, div.container_style_c .add_padding, div.container_style_d .add_padding, div.container_style_e .add_padding {
+	padding:0 12px;
+}
+
+/* Blue disc for bullets, bold links */
+.list_style_1 {
+	list-style-type:none;
+	padding-left:10px;
+}
+.list_style_1 li {
+	background:transparent url(../images/template2013/bullet_blue_disc.png) no-repeat 0px 2px;
+	padding:0 0 14px 18px;
+}
+.list_style_1 a {
+	
+}
+.list_style_1 div {
+	margin:.4em 0 0 0;
+}
+
+/* Blue disc for bullets, normal links */
+.list_style_2, .list_style_2 ul {
+	list-style-type:none;
+	padding-left:10px;
+}
+.list_style_2 li {
+	background:transparent url(../images/template2013/bullet_blue_disc.png) no-repeat 0px 2px;
+	padding:0 0 16px 18px;
+}
+.list_style_2 li li {
+	margin:6px 0 0 0;
+	padding:0 0 0 18px;
+}
+
+/* Gray arrow for bullets */
+.list_style_3 {
+	list-style-type:none;
+	padding-left:10px;
+}
+.list_style_3 li {
+	background:transparent url(../images/template2013/bullet_gray_arrow.png) no-repeat 0px 0px;
+	padding:4px 0 14px 18px;
+}
+
+/*--------------------------------------- Energy Dashboard Assets --------------------------------------*/
+
+.compare_data {
+	float:left;
+	width:450px;
+}
+
+.text_left {
+	text-align:left;
+	padding-left:27px;
+}
+
+.box_left {
+	padding-left:20px;
+}
+
+.featured_narrative {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;	
+	color:#000;
+	font-size:1.4em;
+	min-width: 25%;
+	padding:15px 15px 15px 30px;
+	margin:5px;
+	line-height: 1.5;
+	float: right;
+	text-align:left;
+}
+
+.featured_narrative_wide {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-weight:100;	
+	color:#757575;
+	font-size:1.4em;
+	min-width: 25%;
+	padding:15px 15px 15px 30px;
+	margin:5px;
+	line-height: 1.5;
+	float: right;
+	text-align:left;
+}
+
+.featured_narrative_box {
+	min-width: 35%;
+	padding:10px 0px 10px 10px;
+	float: right;
+}
+
+.featured_narrative_h5 {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#fff;
+	font-size:.7em;
+	margin:0 auto;
+	text-transform:uppercase;
+	text-align:center;
+	background-color:#5271cc;
+	border-bottom: #3e5599 3px solid;
+	letter-spacing:1px;
+	padding-left:5px;
+	padding-right:5px;
+	height: 29px;
+}
+
+.featured_narrative_pattern {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.4em;
+	min-width: 25%;
+	padding:15px 15px 15px 30px;
+	line-height: 1.5;
+	float: right;
+	text-align:left;
+	background:url(../images/energy/box_background.png) repeat;
+}
+
+.featured_banner_orange {
+	position:relative;
+	max-width: 415px;
+	min-width: 415px;
+	height:100px;
+	padding: 30px 20px 30px 15px;
+	margin: 15px 0 15px 0;
+	float: left;	
+	border-bottom:8px #D56A00 solid;
+	background:#ff9345 url(../images/energy/header_background.png) repeat;
+}
+
+.featured_banner_green {
+	position:relative;
+	max-width: 415px;
+	min-width: 415px;
+	height:100px;
+	padding: 30px 20px 30px 15px;
+	margin: 15px 0 15px 20px;
+	float: left;	
+	border-bottom:8px #61844e solid;
+	background:#8fbf60 url(../images/energy/header_background.png) repeat;
+}
+
+.featured_banner_orange_symbol {
+	position: absolute;
+	width: 209px;
+	height: 189px;
+	margin-top: -42px;
+	margin-left: -30px;
+	background-image: url(../images/energy/energy-symbol.png);
+}
+
+.featured_banner_green_symbol {
+	position: absolute;
+	width: 209px;
+	height: 189px;
+	margin-top: -38px;
+	margin-left: -30px;
+	background-image: url(../images/energy/environmental-symbol.png);
+}
+
+.featured_banner_text {
+	font-family: 'PT Serif', serif;
+	font-weight: 700;
+	color:#000;
+	font-size:.85em;
+	line-height: 1.5;
+	text-align: right;
+	text-transform:none;
+	position:relative;
+	padding-left:2px;
+	vertical-align:middle;
+}
+
+.featured_banner_title {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	text-transform:uppercase;
+	
+	color:#000;
+	font-size:1.8em;
+	line-height: 1.1em;
+	text-align: right;
+	position:relative;
+	vertical-align:middle;
+}
+.department_focus_title {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	color:#FFF;
+	font-size:.7em;
+	line-height: 1em;
+	text-align: center;
+	position:relative;
+	vertical-align:middle;
+	padding-top:10px;
+}
+.department_focus {
+	width:294.5px;
+	float:left;
+	position:relative;
+}
+
+.department_focus.right {
+	padding-left:18px;
+}
+
+
+.media_caption {
+	border:1px solid #d6d6d6;
+	font-size:.8em;
+}
+.media_caption img {
+	width:100%;
+}
+.media_caption div {
+	padding:.5em;
+}
+
+.black_overlay{
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index:1001;
+	-moz-opacity: 0.8;
+	opacity:.50;
+	filter: alpha(opacity=80);
+}
+
+.focus_content {
+	display: none;
+	position: fixed;
+	top: 5%;
+	left: 31%;
+	width: 800px;
+	height:85%;
+	padding: 0;
+	background-color: white;
+	z-index:1002;
+	overflow: auto;
+}
+
+
+.focus_close {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	font-weight:400;
+	color:#FFF;
+	font-size:.7em;
+	line-height: 1em;
+	position: relative;
+	margin-top:20px;
+	margin-right:15px;
+	float:right;
+	display:block;
+	z-index:10;
+	vertical-align:bottom;
+}
+
+.department_focus_header_title {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight:700;
+	color:#fff;
+	font-size:1.5em;
+	display:block;
+	text-transform:uppercase;
+	text-align:left;
+	background-color:#5271cc;
+	border-bottom: #3e5599 8px solid;
+	padding-bottom:10px;
+	padding-top:15px;
+	padding-left:28px;
+}
+
+.department_focus_header_subtitle {
+	font-family: 'PT Sans Narrow', sans-serif;
+	text-transform:uppercase;
+	font-weight:100;
+	color:#FFF;
+	font-size:.8em;
+	line-height: 1em;
+	text-align: left;
+	position:relative;
+	vertical-align:middle;
+	padding-top:10px;
+}
+
+
+
+
+.cleaner { /* Needed for Dreamweaver wysiwyg editor. Otherwise use clearfix. */
+	clear:both;
+	height:2px;
+	font-size:1px;
+	border:none;
+	margin:0;
+	padding:0;
+	width:auto;
+	float:none;
+}
+
+.bottom {
+	height:18px;
+}
+
+/* Google Custom Search */
+.gs-image-box {
+	display:none; /* The thumbnails that Google displays are usually irrelevent, so just hide them */
+}
+
+
+/*--------------------------------------- Energy Charts --------------------------------------*/
+
+.dashboard_main {
+	position:relative;
+	height:255px;
+	width:610px;
+	padding: 20px 20px 0px 15px;
+	margin-bottom:18px;
+	margin-top:-8px;
+	float: left;	
+	background: #FFF url(../images/energy/box_background.png) repeat;
+}
+
+.dashboard_main_interactive {
+	position:relative;
+	height:275px;
+	width:645px;
+	padding:0;
+	margin-bottom:75px;
+	margin-top:50px;
+	float: left;	
+	background: #FFF url(../images/energy/box_background.png) repeat;
+}
+
+.dashboard_main_graph {
+	position: absolute;
+	margin:0;
+}
+
+.js #dashboard_energy_graph_interactive {
+	position: absolute;
+	margin-top:-28px;
+}
+
+.js #dashboard_water_graph_interactive  {
+	display:none;
+	position: absolute;
+	margin-top:-28px;
+}
+
+.js #dashboard_gas_graph_interactive  {
+	display:none;
+	position: absolute;
+	margin-top:-28px;
+}
+
+
+.dashboard_main_text {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1em;
+	text-transform:uppercase;
+	text-align:right;
+	line-height:1.1em;
+	position:relative;
+}
+
+.js #dashboard_energy_text_interactive {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.33em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.1em;
+	position:relative;
+	margin-top:-40px;
+}
+
+.js #dashboard_water_text_interactive {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.33em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.1em;
+	position:relative;
+	margin-top:-40px;
+	display:none;
+}
+
+.js #dashboard_gas_text_interactive {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.33em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.1em;
+	position:relative;
+	margin-top:-40px;
+	display:none;
+}
+
+
+
+.js .dashboard_main_progress {
+	height:190px;
+}
+.dashboard_main_progress {
+	position:relative;
+	width:245px;
+	margin-bottom:18px;
+	margin-top:15px;
+	float: left;	
+	background: #FFF url(../images/energy/box_background.png) repeat;
+}
+
+.dashboard_energy_progress {
+	position:relative;
+	width:150px;
+	margin:5px 40px 20px -15px;
+	float: left;
+	background:none;	
+}
+
+.dashboard_energy_focus_progress {
+	position:relative;
+	width:150px;
+	margin:5px 55px 20px -15px;
+	float: left;
+	background:none;	
+}
+
+.js #dashboard_main_progress_energy_graph, .js #dashboard_main_progress_water_graph {
+	position: absolute;
+	margin:0 auto;
+	width:242px;
+	height:150px;
+	text-align:center;
+	padding-top:18px;
+}
+
+.dashboard_main_progress_energy_goal {
+	padding-left:33.5px;
+	position:absolute;
+}
+
+.dashboard_energy_focus {
+	position:absolute;
+}
+
+#dashboard_energy_progress_graph {
+	position: absolute;
+	margin:0 auto;
+	width:150px;
+	height:150px;
+	text-align:center;
+}
+
+.graph_buttons {
+	position:relative;
+	padding-top:295px;
+}
+
+.js #dashboard_main_progress_water_graph {
+	display:none;
+}
+.js #dashboard_main_progress_energy_button {
+	position:absolute;
+	bottom:0;
+	left:0;
+	cursor:pointer;
+}
+.js #dashboard_main_progress_water_button {
+	position:absolute;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+}
+.js #dashboard_interactive_progress_energy_button {
+	position: relative;
+	bottom:0;
+	float:left;
+	cursor:pointer;
+}
+.js #dashboard_interactive_progress_water_button {
+	position: relative;
+	bottom:0;
+	float:left;
+	cursor:pointer;
+}
+.js #dashboard_interactive_progress_gas_button {
+	position: relative;
+	bottom:0;
+	float:left;
+	cursor:pointer;
+}
+
+.dashboard_main_progress_percentage {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:2em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1.1em;
+	position:relative;
+	margin:0 auto;
+	margin-top:110px;
+	margin-left:35px;
+	float:left;
+}
+
+.dashboard_focus_progress_percentage {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size: 2.2em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1.1em;
+	position:relative;
+	padding-left: 60px;
+	float:left;
+	padding-right: 10px;
+	margin-top: -10px;
+	padding-bottom: 10px;
+}
+.dashboard_main_progress_title {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.3em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.2em;
+	position:relative;
+	margin:0 auto;
+	margin-left:105px;
+}
+
+.dashboard_focus_progress_title {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.3em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.2em;
+	margin-top:	-10px;
+}
+
+.dashboard_energy_title {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1.3em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.4em;
+	position:absolute;
+	padding-top:85px;
+	padding-left:20px;
+	width:150px;
+	margin-left:55px;
+}
+.dashboard_energy_percentage {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:2em;
+	text-transform:uppercase;
+	text-align:left;
+	line-height:1.4em;
+	position:absolute;
+	padding-top:85px;
+	padding-left:0px;
+	width:150px;
+	margin-left:0px;
+}
+
+.js .dashboard_main_progress_title {
+	position:absolute;
+	top:110px;
+	width:245px;
+	padding-left: 5px;
+}
+
+.dashboard_main_progress_text {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:.7em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:.8em;
+	position:relative;
+	margin:0 auto;
+	margin-left:10px;
+	padding-left: 5px;
+}
+
+.dashboard_focus_progress_text {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:.7em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:.8em;
+	position:relative;
+	margin:0 auto;
+	float:	left;
+}
+
+.dashboard_energy_text {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:.7em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1.1em;
+	position:absolute;
+	padding-top: 112px;
+	padding-left: 21px;
+	width: 150px;
+	margin-left:6px;
+}
+
+.dashboard_renew_energy_progress {
+	position:relative;
+	margin:0px 20px 20px -15px;
+	float: left;
+	background:none;	
+}
+
+
+
+.dashboard_renew_energy_text {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:1em;
+	text-transform:uppercase;
+	text-align:center;
+	line-height:1.1em;
+	position:absolute;
+	padding-top: 130px;
+	padding-left:10%;
+}
+
+.js .dashboard_main_progress_text {
+	position:absolute;
+	top:137px;
+	width:245px;
+}
+
+.dashboard_glance {
+	position:relative;
+	min-width:150px;
+	margin:15px;
+	float: left;	
+}
+
+.dashboard_energy_glance {
+	padding-top: 15px;
+	position:relative;
+	width:450px;
+	margin:15px;
+	float: left;	
+}
+
+.dashboard_buildings_glance {
+	position:relative;
+	margin:15px;
+	float: left;	
+}
+
+.dashboard_glance_focus {
+	min-width: 130px;
+	position:relative;
+	padding-top:15px;
+	padding-bottom:25px;
+	padding-right: 20px;
+	float: left;	
+}
+
+.dashboard_glance_symbol {
+	position: absolute;
+	margin:0;
+	float:left;
+	height:60px;
+	left: 2px;
+}
+
+.dashboard_energy_symbol {
+	position: relative;
+	padding-left: 10px;
+	float: left;
+}
+
+.dashboard_glance_value {
+	font-family: 'PT Sans Bold', sans-serif;
+	color:#000;
+	font-size:2em;
+	text-transform:uppercase;
+	line-height:1.1em;
+	float:left;
+	height:60px;
+	padding-left:60px;
+	padding-top:15px;
+	padding-right: 5px;
+}
+
+.dashboard_glance_focus_value {
+	font-family: 'PT Sans Bold', sans-serif;
+	color:#000;
+	font-size:1.5em;
+	text-transform:uppercase;
+	line-height:1.1em;
+	float:left;
+	height:60px;
+	padding-left:60px;
+	padding-top:15px;
+	padding-right: 5px;
+}
+
+.dashboard_energy_value {
+	font-family: 'PT Sans narrow Bold', sans-serif;
+	color:#000;
+	font-size: 5em;
+	text-transform:uppercase;
+	line-height: 1em;
+	float: left;
+	padding-left: 15px;
+	position: relative;
+}
+
+.dashboard_glance_value_descriptor {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:.8em;
+	line-height:1em;
+	padding-top: 20px;
+	float: left;
+
+}
+
+.dashboard_glance_descriptor {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size:.9em;
+	text-align:left;
+	line-height:1em;
+	padding-top: 75px;
+	width: 140px;
+}
+
+
+.dashboard_energy_descriptor {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size: 1em;
+	text-transform: uppercase;
+	text-align:left;
+	line-height: 1.4em;
+	padding-top: 2%;
+	float:left;
+}
+
+.dashboard_glance_buildings_descriptor {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-weight:100;
+	color:#000;
+	font-size: 1em;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	padding-left: 7%;
+	padding-top:100px;
+	position:relative;
+}
+
+/*--------------------------------------- Forms --------------------------------------*/
+
+
+.add_side_padding_form {
+	padding: 0 15px 0 15px;
+}
+
+form.search_forms {
+	padding:10px 10px 10px 12px;
+	height:30px;
+	margin:0 auto;
+}
+
+.jumpMenu_location {
+	width:160px;
+	float:left;
+	margin-right:15px;
+}
+
+.jumpMenu_location_right {
+	width:160px;
+	float:right;
+	margin:0 auto;
+}
+
+.jumpMenu_type {
+	width:183px;
+}
+
+.jumpMenu_agency {
+	width:100px;
+}
+
+.jumpMenu_compare {
+	width:257px;
+	margin-bottom:10px;
+}
+
+.floatLeft {
+	float:left;
+	padding-right:20px;
+}
+
+.floatRight {
+	float:right;
+	height:155px;
+}
+
+.floatLeft_last {
+	float:left;
+	padding-right:10px;
+}
+
+.floatLeft_button {
+	float:left;
+	padding:0px;
+}
+
+.floatRight_button {
+	float:left;
+	margin-left:100px;
+}
+
+input.form_button_1 {
+	line-height: normal; 
+	background-color: #8fbf60; 
+	border: 1px solid #aaa;
+	color: #fff;
+	padding:10px;
+	margin-left:10px;
+	font-size:.75em;
+	width:84px;
+}
+
+input.form_button_2 {
+	line-height: normal; 
+	background-color: #757575; 
+	border: 1px solid #aaa;
+	color: #fff;
+	padding:5px 10px 5px 10px;
+	margin-left:10px;
+	margin-top:15px; 
+	font-size:.75em;
+	width:84px;
+}
+
+input.form_button_3 {
+	line-height: normal; 
+	background-color: #8fbf60; 
+	border: 1px solid #aaa;
+	color: #fff;
+	padding:5px 10px 5px 10px;
+	margin-left:10px;
+	margin-top:10px; 
+	font-size:.75em;
+	
+	width:75px;
+}
+
+input.form_button_4 {
+	line-height: normal; 
+	background-color: #757575; 
+	border: 1px solid #aaa;
+	color: #fff;
+	padding:5px 10px 5px 10px;
+	margin-left:10px;
+	margin-top:10px; 
+	font-size:.75em;
+	
+	width:75px;
+}
+
+/*--------------------------------------- Executive banners --------------------------------------*/
+
+.container_style_banner {
+	border:1px solid rgba(0, 0, 0, 0.10);
+	overflow:hidden;	
+	margin:10px 0 0 0;
+	line-height:1em;
+}
+
+.container_banner_image {
+	background: url(../images/banner/governorbanner.png) no-repeat bottom right;
+}
+
+.container_banner_image2 {
+	background: url(../images/banner/banner-gal.png) no-repeat bottom right;
+}
+
+.banner_subtitle {
+	font-family: 'PT Sans Narrow Bold', sans-serif;
+font-weight:100;
+	letter-spacing:.2px;
+	color:#757575;
+	font-size:.8em;
+	margin:0 30px .2em 0;
+	padding:4px 35px 2px 10px;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#20000000,endColorStr=#00000000, GradientType=1);
+}
+
+.banner_subtitle2 {
+	color:#473f2c;
+	font-size:.9em;
+	margin:0 0px .2em 0;
+	padding:4px 0px 2px 10px;
+	background: -moz-linear-gradient(left, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(left, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorStr=#20000000,endColorStr=#00000000, GradientType=1);
+}
+
+.banner_link {
+	font-weight:100;
+	color:#473f2c;
+	font-size:.7em;
+	margin:0;
+	padding-left:12px;
+	padding-bottom:7px;
+	padding-top:7px;
+	font-family:'PT Sans Narrow', sans-serif;
+}
+
+.banner_title {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-stretch: condensed;
+	
+	color: #5A5A5A;
+	font-size:1.1em;
+	padding-right:50px;
+	padding-left:10px;
+}
+
+/*--------------------------------------- Glossary of Terms --------------------------------------*/
+
+/*  +/- Classes  */
+
+.plus {
+	background:url(/images/plus.gif) no-repeat right;
+}
+
+.minus {
+	background:url(/images/minus.gif) no-repeat right;
+}
+
+/* Class and Styles for Show All/Hide All */
+
+#showAll {
+    background-color: #E8E8E8;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #1F70A7;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: poiner;
+    border:none;
+}
+#showAll:hover {
+    border: none;
+    background: #1F70A7;
+    color: #FFF;
+    box-shadow: 0px 0px 1px #777;   
+}
+#hideAll {
+    background-color: #E8E8E8;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #1F70A7;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: poiner;
+    border:none;
+}
+#hideAll:hover {
+    border: none;
+    background: #1F70A7;
+    color: #FFF;
+    box-shadow: 0px 0px 1px #777;   
+}
+
+/*  Adds Pointer Cursor to clickable Headers  */
+#glossary_pointer a:hover {
+    cursor: pointer;   
+}
+
+/* Styling for Term Header */
+
+.termstyle {
+	background-color: #E8E8E8;
+	color: #202020;
+	border-bottom: 2px solid #D0D0D0;
+	font-family: 'PT Serif', serif;
+	font-size: 1.0em;
+}
+
+
+/*----------------------------------------------------------------------------------------------------------*/

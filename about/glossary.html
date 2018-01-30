@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+
+<!-- 
+State of California 2013 master template
+Version 2013.xx.xx
+
+Based on 320 and Up boilerplate extension
+-->
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"><!-- InstanceBegin template="/Templates/2012-2.column-no.ribbon.dwt" codeOutsideHTMLIsLocked="false" --> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Glossary of Terms : About : Green Buildings - Governor's Office</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="MetaTags" -->
+<meta name="Author" content="State of California, Governor's Office" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="glosssary, California, government" />
+
+<script type="text/javascript">
+<!--
+
+function scrollToTop() {
+window.scrollTo(0,0);
+}
+
+
+//Script to toggle Visibility
+function evolve_invisibility(id) {
+	var e = document.getElementById(id);
+	var q = document.getElementById(id + '_h');
+
+	if(e.style.display == 'block') {
+		e.style.display = 'none';
+		q.className = "termstyle plus";
+	}
+	else {
+		e.style.display = 'block';
+		q.className = "termstyle minus";
+	}
+}
+
+//ClassName functionality check
+function getElementsByClassName(node,classname) {
+  if (node.getElementsByClassName) { 
+  	// use native implementation if available
+    return node.getElementsByClassName(classname);
+  } 
+  else {
+    return (function getElementsByClass(searchClass,node) {
+        if ( node == null )
+          node = document;
+        var classElements = [],
+            els = node.getElementsByTagName("*"),
+            elsLen = els.length,
+            pattern = new RegExp("(^|\\s)"+searchClass+"(\\s|$)"), i, j;
+
+        for (i = 0, j = 0; i < elsLen; i++) {
+          if ( pattern.test(els[i].className) ) {
+              classElements[j] = els[i];
+              j++;
+          }
+        }
+        return classElements;
+    })(classname, node);
+  }
+}
+
+//Script for Show All/Hide All Toggle
+function toggle_visibility(className, num) {
+	var elements = getElementsByClassName(document, className);
+
+	for (var i = 0; i < elements.length; i++) {
+		var e = elements[i];
+		var q = document.getElementById(elements[i].id + '_h');
+
+		if(num == 0) {
+			e.style.display = 'none';
+			q.className = "termstyle plus";
+		}else{
+			e.style.display = 'block';
+			q.className = "termstyle minus";
+		}
+	}
+}
+
+/*  This function and it's addEventListener are required to 
+	not lock out browsers with scripting disabled.
+*/
+function pre_loader() {
+	toggle_visibility('collapse', 0);
+	toggle_visibility('showallhideall', 1);
+}
+
+window.addEventListener("load", pre_loader, false);
+
+-->
+</script>
+
+<style type="text/css">
+
+</style>
+
+<!-- InstanceEndEditable -->
+
+<!--#include virtual="/ssi/head_css_js.html" -->
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+
+</head>
+
+<body class="two_column clearfix">
+<!--
+Step 2
+Select your navigation type:
+/ssi/header.single_level_nav.html
+/ssi/header.mininav.html
+/ssi/header.megadropdown.html
+-->
+
+<!--#include virtual="/ssi/header.megadropdown.html" -->
+
+<div id="main_content" class="clearfix">
+	<div class="content_one_column clearfix">
+
+		<div class="add_maincontent_padding">
+		<!-- InstanceBeginEditable name="MainContent" -->
+
+<div id="glossary_pointer">				
+				<h1>About</h1>
+<h2>Definitions of Terms and Other <a onclick="evolve_invisibility('ExpNotes');" href="#ExplanatoryNotes">Explanatory Notes</a></h2>
+
+<div class="showallhideall" style="float:right; display:none;">
+<input type="submit" name="submit" value="Show All" id="showAll" onclick="toggle_visibility('collapse', 1);" />
+<input type="submit" name="submit" value="Hide All" id="hideAll" onclick="toggle_visibility('collapse', 0);" />
+</div>
+
+<h3>Glossary of Terms &mdash; Click to Expand</h3>
+
+	<a onclick="evolve_invisibility('baseline');">
+	<h4 id="baseline_h" class="termstyle">
+    BASELINE YEAR</h4>
+    </a>
+    <div id="baseline" class="collapse">
+		<p>The starting year of energy or water use, or  greenhouse gas emission reporting, that a facility or department uses for  comparison to later years. For example, most state facilities use 2003 as a  baseline year for measurement of energy use, and 2010 as a baseline for measurement  of water use and greenhouse gas emissions.
+		</p>
+	</div>
+		  
+          <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+	<a onclick="evolve_invisibility('benchmarking');">
+    <h4 id="benchmarking_h" class="termstyle">BENCHMARKING</h4>
+    </a>
+    <div id="benchmarking" class="collapse">
+    	<p>The process of collecting performance data  for a facility and comparing that data to a standard metric, usually the best  performance practices for that type of facility. Energy and water benchmarking  of state buildings is usually done with the goal of motivating the facility to improve,  and allows for comparing progress with other buildings. Benchmarking of state  buildings shall use <a href="http://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager">ENERGY  STAR® Portfolio Manager</a>® for energy and water  use, and The Climate Registry for greenhouse gas emissions, using its <a href="http://www.theclimateregistry.org/climate-registry-information-system-cris/http:/www.theclimateregistry.org/climate-registry-information-system-cris/">Climate  Registry Information System (CRIS)</a> online database.  
+        </p>
+    </div>
+    
+  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>  
+
+	<a onclick="evolve_invisibility('BTU');">
+    <h4 id="BTU_h" class="termstyle">BRITISH  THERMAL UNIT (Btu)</h4>
+    </a>
+    <div id="BTU" class="collapse">
+    	<p>A measure of heat energy. It takes 1 Btu to  raise the temperature of 1 pound of water by <br>
+		  1 degree Fahrenheit at sea level. For example, it takes about 2,000 Btu to make  a pot of coffee. One Btu is approximately equivalent to 252 calories, 778  foot-pounds, 1,055 joules, and 0.293 watt-hours. (Note: In the abbreviation,  only the B is capitalized.)
+          </p>
+		  <ul>
+		    <li>kBtu = 1,000  Btu</li>
+		    <li>MMBtu = 1 million  Btu (sometimes expressed as MBtu)</li>
+	    </ul>
+		  <p>See  &quot;<a href="#EnergyUnit">Energy Unit Conversions</a>&quot; below for conversions of various energy types to  equivalent Btu.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+	<a onclick="evolve_invisibility('CO2e');">
+    <h4 id="CO2e_h" class="termstyle">CARBON DIOXIDE  EQUIVALENT (CO2e)</h4>
+    </a>
+    <div id="CO2e" class="collapse">
+    	<p>A  common unit of measure used to compare the emissions from various greenhouse  gases based upon their global warming potential (GWP). Carbon dioxide  equivalents are commonly expressed as metric tons of CO2e. The  carbon dioxide equivalent for a gas is derived by multiplying the tons of the  gas by the associated GWP.
+        </p>
+    </div>
+
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+	<a onclick="evolve_invisibility('climateregistry');">
+    <h4 id="climateregistry_h" class="termstyle">CLIMATE REGISTRY, THE</h4>
+    </a>
+    <div id="climateregistry" class="collapse">
+    	<p>A  nonprofit organization that provides meaningful information aimed at reducing  greenhouse gas emissions. The Climate Registry establishes consistent,  transparent standards throughout North America for businesses and governments  to calculate, verify and publicly report their carbon footprints in a single,  unified registry.</p>
+    </div>
+          
+          <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+          <p>&nbsp;</p>
+          
+	<a onclick="evolve_invisibility('CRIS');">
+    <h4 id="CRIS_h" class="termstyle">CLIMATE REGISTRY INFORMATION SYSTEM  (CRIS)</h4>
+    </a>
+    <div id="CRIS" class="collapse">
+    	<p> The  Climate Registry&rsquo;s online greenhouse gas (GHG) calculation, reporting, and  verification tool. CRIS also provides public access to The Registry&rsquo;s verified  emission reports.</p>
+    </div>
+
+          <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+          <p>&nbsp;</p>
+
+	<a onclick="evolve_invisibility('depts');">
+    <h4 id="depts_h" class="termstyle">DEPARTMENTS </h4>
+    </a>
+    <div id="depts" class="collapse">
+    	<p>Referenced  on this website are departments of the State of California that manage  state-owned facilities.</p>
+    </div>
+       
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          	<a onclick="evolve_invisibility('EVSE');">
+    <h4 id="EVSE_h" class="termstyle"> ELECTRIC VEHICLE SUPPLY EQUIPMENT (EVSE)</h4>
+    </a>
+    <div id="EVSE" class="collapse">
+    	<p>Commonly  referred to as electric vehicle charging station, the term EVSE includes  equipment and power connections that deliver energy to charge electric  vehicles.</p>
+    </div>
+          
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          	<a onclick="evolve_invisibility('EVCI');">
+    <h4 id="EVCI_h" class="termstyle">ELECTRIC VEHICLE CHARGING  INFRASTRUCTURE </h4>
+    </a>
+    <div id="EVCI" class="collapse">
+    	<p>Includes  structures, machinery, and equipment necessary and integral to charge an  electric vehicle, including EVSEs, power supply, and data connections, if  applicable. <a href="http://gov.ca.gov/news.php?id=17508">Executive Order <br>
+	      B-18-12</a> requires state agencies to evaluate and plan for electric vehicle  charging infrastructure at state-owned parking facilities.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          	<a onclick="evolve_invisibility('ESPM');">
+    <h4 id="ESPM_h" class="termstyle">ENERGY STAR&reg; PORTFOLIO  MANAGER&reg;</h4>
+    </a>
+    <div id="ESPM" class="collapse">
+    <p>An  online tool developed by the U.S. Environmental Protection Agency (EPA) to  measure and track energy, water consumption, and greenhouse gas emissions. It  can be used to benchmark the performance of one building or a whole portfolio  of buildings, all in a secure online environment. State of California  departments and agencies have been directed to use the ESPM to document energy  and water use data to track progress toward achieving targets of Governor Brown&rsquo;s <a href="http://gov.ca.gov/news.php?id=17508">Executive Order B-18-12</a> and  Green Building Action Plan.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          	<a onclick="evolve_invisibility('EUC');">
+    <h4 id="EUC_h" class="termstyle">ENERGY UNIT CONVERSIONS </h4>
+    </a>
+    <div id="EUC" class="collapse">
+    <p>On  this website, the following conversion factors are used to combine total energy  into common energy units of Btu:</p>
+	<ul>
+		<li>1 kilowatt  hour (kWh) of electricity = 3,412 Btu or 3.412 kBtu</li>
+		<li>1 therm of  natural gas = 100,000 Btu or 100 kBtu</li>
+		<li>1 gallon of  propane gas = 91,500 Btu or 91.5 kBtu</li>
+		<li>A wooden  kitchen match produces approximately 1 Btu</li>
+		<li>A typical household air conditioner  uses 5-15 kBtu   </li></ul>
+    </div>
+    
+		      <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+            <p>&nbsp;</p>
+
+	<a onclick="evolve_invisibility('usecons');">
+    <h4 id="usecons_h" class="termstyle">ENERGY USE or ENERGY CONSUMPTION</h4>
+    </a>
+    <div id="usecons" class="collapse">
+    <p>The  amount of energy consumed in the form in which it is acquired by the user. This  includes all forms of energy, including but not limited to electricity, natural  gas, propane, and other fuels. Energy, as referenced on this website, includes  actual energy sources used at the site or facility and excludes upstream electrical  generation and distribution losses.</p>
+    </div>
+
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+    <a onclick="evolve_invisibility('EUI');">
+    <h4 id="EUI_h" class="termstyle">ENERGY  USE INTENSITY (EUI) </h4>
+    </a>
+    <div id="EUI" class="collapse">
+    <p>An  expression of a building&rsquo;s energy use as a function of its size or other  characteristics. For most property types in the ENERGY STAR<strong>®</strong> Portfolio Manager<strong>®</strong>,  the EUI is expressed as energy per square foot per year. A building&rsquo;s EUI is calculated  by dividing the total of all energy sources (electricity, natural gas, propane,  etc.) consumed by the building in one year (measured in kBtu) by the total  gross floor area of the building (kBtu/square foot).</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('facilities');">
+    <h4 id="facilities_h" class="termstyle">FACILITIES </h4>
+    </a>
+    <div id="facilities" class="collapse">
+    <p>This  website refers to facilities as sites where state-owned buildings are located.  A facility could include only one structure, or could include an entire campus  of buildings and structures.</p>
+    </div>
+    
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('GBCI');">
+    <h4 id="GBCI_h" class="termstyle">GREEN BUILDING CERTIFICATION INSTITUTE  (GBCI) </h4>
+    </a>
+    <div id="GBCI" class="collapse">
+    <p>A  third-party organization that provides independent oversight of professional  credentialing and project certification programs related to green building.  GBCI administers certifications and professional designations within the  framework of the U.S. Green Building Council® LEED® green  building program; and ensures precision in the design, development, and  implementation of measurement processes for green building performance (through  project certification) and green building practices (through professional  credentials and certificates).</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('GHG');">
+    <h4 id="GHG_h" class="termstyle">GREENHOUSE  GAS (GHG) </h4>
+    </a>
+    <div id="GHG" class="collapse">
+    <p>Any gas that absorbs infrared  radiation, slowing down the passage of re-radiated heat through Earth&rsquo;s  atmosphere. Greenhouse gases include carbon dioxide, water vapor, methane, chlorofluorocarbons,  nitrous oxide and ozone, as well as other gases, and absorb heat at different  rates. Some greenhouse gases are naturally occurring, and others result from  human activities, such as burning of fossil fuels.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('kW');">
+    <h4 id="kW_h" class="termstyle">KILOWATT (kW) </h4>
+    </a>
+    <div id="kW" class="collapse">
+    <p>One  thousand (1,000) watts. A unit of measure of the amount of electricity needed  to operate given equipment. On a hot summer afternoon, a typical home with  central air conditioning and other equipment in use might have a demand of 4  kW.</p>
+    </div>
+    
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('kWh');">
+    <h4 id="kWh_h" class="termstyle">KILOWATT-HOUR (kWh) </h4>
+    </a>
+    <div id="kWh" class="collapse">
+    <p>The  most commonly used unit to measure electricity consumed over time. It means 1  kilowatt of electricity supplied for one hour. In 2013, a typical California  household consumed 690 kWh in an average month.</p>
+    </div>
+         
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('LEED');">
+    <h4 id="LEED_h" class="termstyle">LEADERSHIP IN ENERGY AND ENVIRONMENTAL  DESIGN™ (LEED®) </h4>
+    </a>
+    <div id="LEED" class="collapse">
+    <p>The nation&rsquo;s most widely used green building rating  system, developed and administered by the U.S. Green Building Council®, rates buildings for sustainability  qualities including energy and water efficiency, improved indoor environmental  quality, reduced transportation impacts, sustainable sites, and materials  efficiency. Using LEED, California&rsquo;s building managers are able to track  progress toward sustainability targets and earn nationally recognized  certification.</p>
+    </div>
+    
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>
+
+	<a onclick="evolve_invisibility('leedCert');">
+    <h4 id="leedCert_h" class="termstyle">LEED® CERTIFIED </h4>
+    </a>
+    <div id="leedCert" class="collapse">
+    <p>New  or existing buildings, or even neighborhoods, can obtain one or more LEED<strong>®</strong> certifications by  completing and documenting prerequisites and optional credits sufficient to  demonstrate certification at one of four levels: LEED Certified™, LEED Silver<strong>®</strong>, LEED Gold<strong>®</strong>, or LEED Platinum<strong>®</strong>. LEED certification is  achieved only after the Green Building Certification Institute (GBCI) reviews  applications and documentation and determines whether credits are  satisfactorily completed. Governor Brown&rsquo;s <a href="http://gov.ca.gov/news.php?id=17508">Executive Order B-18-12</a> requires  that new or renovated state buildings over 10,000 square feet and existing  buildings over 50,000 square feet achieve LEED certification at a level of Silver  or higher.</p>
+    </div>
+
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>
+
+<a onclick="evolve_invisibility('MW');">
+    <h4 id="MW_h" class="termstyle">MEGAWATT  (MW) </h4>
+    </a>
+    <div id="MW" class="collapse">
+    <p>One  thousand kilowatts (1,000 kW) or 1 million (1,000,000) watts. One megawatt is  enough electrical capacity to power approximately 1,000 average California  homes.</p>
+    </div>
+        
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('modern');">
+    <h4 id="modern_h" class="termstyle">MODERNIZATION </h4>
+    </a>
+    <div id="modern" class="collapse">
+    <p>To  make modern in appearance, style, or function. In buildings, this typically  includes replacement of finishes and some outdated building systems (lighting, HVAC,  roofing, etc.), sometimes resulting in improved efficiency.</p>
+    </div>
+    
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>
+
+	<a onclick="evolve_invisibility('onsite');">
+    <h4 id="onsite_h" class="termstyle">ON-SITE  RENEWABLE ENERGY  </h4>
+    </a>
+    <div id="onsite" class="collapse">
+    <p>Renewable  energy that is generated within the boundaries of a facility or site, where the  energy is consumed.</p>
+    </div>
+
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>
+
+<a onclick="evolve_invisibility('PVCell');">
+    <h4 id="PVCell_h" class="termstyle">PHOTOVOLTAIC CELL (PV CELL) </h4>
+    </a>
+    <div id="PVCell" class="collapse">
+    <p>A  semiconductor that converts sunlight into electricity. Also known as solar  cells or solar photovoltaics (PVs).</p>
+    </div>
+    
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+<p>&nbsp;</p>
+
+<a onclick="evolve_invisibility('process');">
+    <h4 id="process_h" class="termstyle">PROCESS ENERGY </h4>
+    </a>
+    <div id="process" class="collapse">
+    <p>The  energy used in an activity or treatment that is not related to the space  conditioning, lighting, service water heating, or ventilating of a building as  it relates to human occupancy. A process load is a load placed on the building  systems resulting from a process (examples could include manufacturing  equipment loads or other loads serving uses outside of the building).</p>
+    </div>
+      
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('plugloads');">
+    <h4 id="plugloads_h" class="termstyle">PLUG LOADS </h4>
+    </a>
+    <div id="plugloads" class="collapse">
+    <p>The  energy demand from an appliance, piece of equipment, or electrical device that  is plugged into the electrical system and can be unplugged. Equipment and  devices that are hard-wired into the electrical system are not typically  included in plug loads.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('renewable');">
+    <h4 id="renewable_h" class="termstyle">RENEWABLE ENERGY </h4>
+    </a>
+    <div id="renewable" class="collapse">
+    <p>Resources  that constantly renew themselves or that are regarded as practically  inexhaustible. These include solar, wind, geothermal, small hydroelectric  generation and biomass. Although particular geothermal formations can be  depleted, the natural heat in the earth is a virtually inexhaustible reserve of  potential energy. Renewable resources also include some experimental or  less-developed sources such as tidal power, sea currents and ocean thermal gradients.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('RCx');">
+    <h4 id="RCx_h" class="termstyle">RETROCOMMISSIONING (RCx) </h4>
+    </a>
+    <div id="RCx" class="collapse">
+    <p>Also known as Existing Building Commissioning (EBCx), retrocommissioning  is a systematic process for improving the efficiency and operation of a  building, and how building energy or water consuming equipment and systems function  together. This involves developing a building operation plan that identifies  current operating requirements and needs, conducting tests to determine whether  building systems are performing optimally in accordance with the plan, and  making any necessary repairs or changes to building systems for improved  performance and efficiency.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('retrofit');">
+    <h4 id="retrofit_h" class="termstyle">RETROFIT </h4>
+    </a>
+    <div id="retrofit" class="collapse">
+    <p>Modifying a building after initially  built. This may include changes to systems inside the building (i.e., lighting,  mechanical, plumbing, etc.) to improve amenities for building occupants or to  improve building performance.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('stateportfolio');">
+    <h4 id="stateportfolio_h" class="termstyle">STATE PORTFOLIO </h4>
+    </a>
+    <div id="stateportfolio" class="collapse">
+    <p>The  executive branch of the State of California owns approximately 1,800 facilities  with over 12,000 structures comprising more than 120 million square feet. These  buildings are managed by 38 state departments or agencies and are located  throughout California. The state also leases over 20 million square feet of  buildings.</p>
+    </div>
+		  
+		  <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+		  <p>&nbsp;</p>
+          
+          <a onclick="evolve_invisibility('USGBC');">
+    <h4 id="USGBC_h" class="termstyle">U.S. GREEN BUILDING COUNCIL&reg; (USGBC)</h4>
+    </a>
+    <div id="USGBC" class="collapse">
+    <p>A  worldwide 501(c)(3) nongovernmental organization made up of 13,000 member  organizations, 76 chapters and thousands of community volunteers working  together to move the building industry toward higher sustainability. The USGBC  administers the LEED® green building program, and has accredited  over 188,000 LEED professionals who help certify buildings using the LEED  rating system.</p>
+    </div>
+        <p>&nbsp;</p>
+        <div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+       <p>&nbsp;</p>
+          <hr>
+
+	<a name="ExplanatoryNotes"></a>
+
+        <a onclick="evolve_invisibility('ExpNotes');">
+        <h4 id="ExpNotes_h" id="ExplanatoryNotes" class="termstyle">EXPLANATORY NOTES:</h4>
+        </a>
+        <div id="ExpNotes" class="collapse">
+        <p><a href="http://gov.ca.gov/news.php?id=17508">EXECUTIVE ORDER B-18-12</a> (EO B-18-12) and the <a href="http://gov.ca.gov/docs/Green_Building_Action_Plan_B.18.12.pdfhttp:/gov.ca.gov/docs/Green_Building_Action_Plan_B.18.12.pdf">GREEN BUILDING ACTION PLAN</a> (GBAP) – signed April 25, 2012;  Governor Edmund G. Brown Jr. directed state agencies and departments to reduce  greenhouse gas emissions, energy, and water use, and move toward zero net  energy for state facilities. He also directed increases to on-site power  generation and electric vehicle charging infrastructure, as well as improved  indoor environmental quality, environmentally preferable purchasing and  building commissioning, and the development of additional state policies  supporting these efforts. The oversight of these efforts is coordinated through  an interagency Sustainability Task Force and Sustainable Building Working  Group.</p>
+        <ul>
+          <li>CALIFORNIA  ENVIRONMENTAL GOALS from EO B-18-12:
+            <ul>
+              <li>Reduce  energy use 20 percent by 2018, as compared to a 2003 baseline</li>
+              <li>Reduce  greenhouse gas emissions from state operations by 10 percent by 2015, and by 20  percent by 2020, as compared to a 2010 baseline</li>
+              <li>Reduce  water use by 10 percent by 2015, and 20 percent by 2020, as compared to a 2010  baseline or earlier</li>
+              <li>Certification  of all new and renovated buildings over 10,000 square feet to a level of LEED  Silver® or higher</li>
+              <li>LEED  certification of all existing buildings over 50,000 square feet</li>
+              <li>State  agencies to evaluate and plan for electric vehicle charging infrastructure at  state-owned parking facilities</li>
+            </ul>
+          </li>
+        </ul>
+        </div>
+<div class="back_top"><font color="#0080C0"><a href="/about/glossary.html" onClick="scrollToTop()">▲ Top</a></font></div>
+</div>
+<!-- InstanceEndEditable -->
+		</div>
+	</div>
+
+	<div class="content_right_column clearfix">
+	<!-- InstanceBeginEditable name="ContentRightColumn" -->
+
+		
+
+	
+
+
+	<!-- InstanceEndEditable -->
+	</div>
+
+	<div class="cleaner"></div>
+
+</div>
+
+<!--#include virtual="/ssi/footer_2.html" -->
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,345 @@
+/* Custom CSS - The CSS properties in this stylesheet will over-write any original template styles if the same class names are used in addition to custom styles which can also be added. */
+
+/* Home CSS */
+
+.home-parent {
+	margin: auto;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.home-TItext {
+	max-width: 150px;
+	text-align: left;
+	font-weight: 600;
+	color: #58595b;
+	margin: 0 auto;
+}
+.home-topicons {
+	margin: 5px 5px 5px 5px;
+	max-width: 45%;
+	min-width: 250px;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+.home-topicon {
+	max-width: 100%;
+	height: auto;
+	padding-top: 20px;
+}
+.home-img {
+	max-width: 100%;
+	height: auto;
+}
+.submenuHeader {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	top: -7px;
+	left: -10px;
+	font-weight: bold;
+}
+
+
+/* Updated CSS from Art 2/29/16 -----------------------------------------------------------------------------------------------*/
+
+
+html {
+	background: #676767;
+}
+.body {
+	background: #fff;
+}
+
+@media (min-width: 768px) {
+.global-header {
+	background: #858585 url("/images/top-banner.jpg") no-repeat;
+	background-position: center;
+}
+.primary .global-header {
+	background: #858585 no-repeat;
+	background-position: center;
+}
+.primary .global-header .header-decoration {
+	background: none;
+	border-bottom: 8px solid #f7941e;
+	height: 0px;
+}
+.header-slideshow-banner .banner-pager {
+	position: absolute;
+	right: 45px;
+	top: 450px;
+}
+.header-slideshow-banner .banner-play-pause {
+	position: absolute;
+	top: 450px;
+	right: 17px;
+	z-index: 1000;
+}
+.frameworkLink {
+	width: 100%;
+	max-width: 1280px;
+	height: 480px;
+	margin: auto;
+	cursor: pointer;
+}
+.frameworkLink:hover {
+	background: #858585 no-repeat;
+	background-position: center 84.45%;
+}
+}
+.primary.two-column .main-content {
+	background: #fff;
+}
+.two-column .main-content {
+	background: #fff;
+}
+.panel-body {
+	border: #aaa solid 1px;
+}
+
+/* V4.5 Template */
+
+
+@media (max-width: 768px) {
+.branding {
+	margin-left: 59px;
+	margin-right: 118px;
+}
+.header-organization-banner img {
+	display: none;
+}
+.header-organization-banner {
+	background-image: url("/images/CA50-Logo-mobile.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: 190px;
+}
+.global-header {
+	background: #224D79;
+}
+.main-navigation > ul > li a.first-level-link:hover {
+	text-decoration: underline;
+	text-shadow: none;
+	font-color: #ffcc67;
+}
+.main-navigation > ul > li.active a.first-level-link {
+	text-decoration: underline;
+	text-shadow: none;
+	color: #ffcc67;
+}
+}
+
+@media (min-width: 768px) {
+.primary .header-organization-banner {
+	background: rgba(255, 255, 255, .6);
+}
+.header-organization-banner {
+	background: rgba(255, 255, 255, .6);
+}
+.main-navigation > ul > li a.first-level-link:hover {
+	text-decoration: underline;
+	text-shadow: none;
+	font-color: #ffcc67;
+}
+.main-navigation > ul > li.active a.first-level-link {
+	text-decoration: underline;
+	text-shadow: none;
+	color: #ffcc67;
+}
+.branding {
+	margin-left: auto;
+	margin-right: auto;
+}
+.header-cagov-logo {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	line-height: 145px;
+	left: auto;
+	padding-left: 15px;
+}
+.primary .global-header {
+	min-height: 150px;
+}
+.main-navigation {
+	width: 100%;
+	background: rgb(39, 76, 121);
+	border-bottom: 3px solid #F7941E;
+}
+.primary .global-header .header-decoration {
+	background: none;
+	border-bottom: 8px solid #274C79;
+	height: 0px;
+}
+.header-slideshow-banner .banner-pager {
+	position: absolute;
+	right: 45px;
+	top: 350px;
+}
+.header-slideshow-banner .banner-play-pause {
+	position: absolute;
+	top: 350px;
+	right: 17px;
+	z-index: 1000;
+}
+.top-level-nav {
+	width: 768px;
+}
+.main-content .main-primary {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+}
+
+@media (min-width: 992px) {
+.top-level-nav {
+	width: 992px;
+}
+.main-content .main-primary {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.two-column .main-content .main-primary {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+}
+
+@media (max-width: 991px) {
+.main-content .main-primary {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+}
+
+@media (min-width: 1280px) {
+.top-level-nav {
+	width: 1280px;
+}
+.main-content .main-primary {
+	position: relative;
+	min-height: 1px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.two-column .main-content .main-primary {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+}
+.primary.two-column .main-content {
+	background: #fff;
+}
+.two-column .main-content {
+	background: #fff;
+}
+.two-column {
+	background: #fff;
+}
+.main-content {
+	background: #fff;
+}
+.off-canvas-enabled {
+	background: #fff;
+}
+.panel-body {
+	border: #aaa solid 1px;
+}
+.main-content, .global-header, .global-footer {
+	border: none;
+}
+.global-header {
+	width: 100%;
+	background-size: cover;
+}
+.main-navigation {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.top-level-nav {
+	list-style: none;
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+.main-navigation > ul > li a.first-level-link {
+	font-size: 1.15em;
+	font-weight: 600;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+.global-footer {
+	width: 100%;
+	background: #676767;
+}
+.primary {
+	background: #fff;
+}
+.profile-banner {
+	border-radius: 0px;
+}
+.main-secondary .panel {
+	margin: 0 0 15px 0;
+}
+.header-slideshow-banner {
+	top: 158px;
+	height: 400px;
+}
+.panel-default>.panel-heading {
+	border-left: #046 2px solid;
+	border-right: #046 2px solid;
+}
+.primary .main-content {
+	background: #fff;
+}
+.slide-text .title {
+	font-size: 1.8em;
+	font-weight: bold;
+	text-shadow: 0 1px 2px #000;
+}
+.slide-text {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1.2em;
+	font-stretch: normal;
+	text-align: center;
+	top: auto;
+	border: none;
+	border-radius: 0px;
+	background-color: rgba(0,0,0,0.5);
+}
+.header-slideshow-banner .banner-control {
+	cursor: pointer;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(255,255,255,0.95);
+	background: #ddd;
+	background-color: rgba(0,0,0,0.4);
+	border: 1px solid rgba(255,255,255,0.35);
+	display: block;
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin: 0 5px 0 0;
+	font-stretch: normal;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	outline-style: none;
+}
+.section {
+	background-color: #E7E8E9;
+}
+.section-content {
+	margin: auto;
+	max-width: 70%;
+	text-align: center;
+	margin-top: -25px;
+	padding-top: 30px;
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>Sample - Featured Search</title>
+
+<meta name="Author" content="State of California" />
+<meta name="Description" content="State of California" />
+<meta name="Keywords" content="California, government" />
+
+<!--#include virtual="/ssi/head-css-js.html" -->
+
+<script type="text/javascript">
+	var defaultActiveLink = "Examples";
+</script>
+
+
+</head>
+
+<body class="primary">
+
+<header role="banner" id="header" class="global-header">
+	<div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+    
+    <!-- Include Branding -->
+    <!--#include virtual="/ssi/branding.html" -->
+    
+    <!-- Include Mobile Controls -->
+    <!--#include virtual="/ssi/mobile-controls.html" -->
+    
+    <div class="navigation-search">
+        
+        <div id="head-search" class="search-container featured-search">
+            <!-- Include Search -->
+            <!--#include virtual="/ssi/search.html" -->
+        </div>
+        
+        <!-- Include Navigation -->
+        <!--#include virtual="/ssi/navigation.html" -->
+    
+    </div>
+    
+	<div class="header-decoration"></div>
+</header>
+
+
+<div id="main-content" class="main-content">
+    <div class="wrapper">
+        <main role="main" class="main-primary">
+            <ol class="breadcrumb">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Examples</a></li>
+                <li class="active">Featured Search</li>
+            </ol>
+            
+            <div class="group">
+                <div class="half">
+                    <h1>Featured Search</h1>
+                    <p>The header above is an example of the featured search bar. It's location and size make it a prominent feature on this template. The <code>.featured-search</code> class can be added to the <code>#head-search</code> div only within <code>.primary</code> landing page templates. (See <a href="page-templates.html">Page Templates</a> for additional info on <code>.primary</code> templates)</p>
+                    
+                    <p><span class="label label-info">NOTE:</span> The <code>.featured-search</code> class should not be used on templates that use the <a href="rotating-header-banner.html">Rotating Header Banner</a>.</p>
+                </div>
+                 <div class="half">
+                    <h2><label for="sample-accordion">Source Code:</label></h2>
+                    <textarea id="sample-accordion" class="form-control" rows="10" cols="80"><!--#include virtual="/sample/modules/featured-search.html" --></textarea>
+                </div> 
+            </div>
+        </main>
+    </div>
+</div>
+
+
+<!--#include virtual="/ssi/global-footer.html" -->
+
+<!--#include virtual="/ssi/scripts.html" -->
+
+</body>
+</html>
